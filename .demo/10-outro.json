@@ -34,20 +34,6 @@
         "start": "vm",
         "end": "pass-filled"
       }
-    },
-    {
-      "title": "Feedback",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/outro/feedback.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
     }
   ]
 }
