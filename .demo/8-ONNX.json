@@ -1,0 +1,67 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "ONNX",
+  "description": "",
+  "demos": [
+    {
+      "title": "Title",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/title.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "What",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/what.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Why",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/why.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Zoo",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/zoo.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

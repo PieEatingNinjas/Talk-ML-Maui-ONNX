@@ -1,0 +1,2 @@
+            .Append(_mlContext.Transforms.Concatenate("Features", "RegionEncoded", "SexEncoded", "SmokerEncoded", "ChildrenFloat", "AgeFloat", "Bmi"))
+            

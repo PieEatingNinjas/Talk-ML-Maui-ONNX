@@ -1,0 +1,4 @@
+    
+    private IDataView LoadData()
+        => _mlContext.Data.LoadFromTextFile<InputModel>(_dataPath, separatorChar: ',', hasHeader: true);
+        

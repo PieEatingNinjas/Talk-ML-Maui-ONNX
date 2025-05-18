@@ -1,0 +1,24 @@
+    private static PredictionEngine<InputModel, OutputModel> CreatePredictEngine()
+    {
+        var context = new MLContext();
+    
+        var pipeline = context.Transforms.ResizeImages(
+            inputColumnName: "Image",
+            outputColumnName: "resized_image",
+            imageWidth: 300,
+            imageHeight: 300,
+            resizing: ImageResizingEstimator.ResizingKind.Fill)
+            .Append(context.Transforms.ExtractPixels(
+                inputColumnName: "resized_image",
+                outputColumnName: "data"))
+            .Append(context.Transforms.ApplyOnnxModel(
+                modelFile: ModelPath,
+                inputColumnNames: ["data"],
+                outputColumnNames: ["model_output"]));
+        
+        var model = pipeline.Fit(context.Data.LoadFromEnumerable(new List<InputModel>()));
+
+		return context.Model.CreatePredictionEngine<InputModel, OutputModel>(model);
+    }
+
+	

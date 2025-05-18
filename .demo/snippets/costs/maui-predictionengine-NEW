@@ -1,0 +1,4 @@
+    public static OutputModel Predict(InputModel input)
+    {
+        return PredictEngine.Value.Predict(input);
+    }

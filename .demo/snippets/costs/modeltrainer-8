@@ -1,0 +1,3 @@
+            .Append(_mlContext.Transforms.Conversion.ConvertType("ChildrenFloat", "Children", DataKind.Single))
+            .Append(_mlContext.Transforms.Conversion.ConvertType("AgeFloat", "Age", DataKind.Single))
+            

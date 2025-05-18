@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="AillBeBack.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AillBeBack"
+    Shell.FlyoutBehavior="Disabled"
+    Title="AI'll Be Back">
+
+    <TabBar>
+       <Tab Title="Loan Status"
+            Icon="money.png">
+           <ShellContent ContentTemplate="{DataTemplate local:Loan}" />
+       </Tab>
+       <Tab Title="Costs"
+            Icon="money.png">
+           <ShellContent ContentTemplate="{DataTemplate local:MedicalCosts}" />
+       </Tab>
+       <Tab Title="F1 Cars"
+            Icon="flag.png">
+           <ShellContent ContentTemplate="{DataTemplate local:F1Cars}" />
+       </Tab>
+    </TabBar>
+</Shell>

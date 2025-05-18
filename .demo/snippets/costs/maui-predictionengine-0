@@ -1,0 +1,9 @@
+using Microsoft.ML;
+using AillBeBack.Helpers;
+
+namespace AillBeBack.Features.MedicalCosts;
+
+public static class MedicalCostPredictionEngine
+{
+    
+}        

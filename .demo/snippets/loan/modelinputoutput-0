@@ -1,0 +1,4 @@
+using Microsoft.ML.Data;
+
+namespace AillBeBack.Features.Loan;
+

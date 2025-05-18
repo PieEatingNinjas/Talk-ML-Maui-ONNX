@@ -1,0 +1,11 @@
+using Microsoft.ML;
+using Microsoft.ML.Data;
+using Microsoft.ML.Transforms.Image;
+using AillBeBack.Helpers;
+
+namespace AillBeBack.Features.F1Cars;
+
+public static class F1CarPredictionEngine
+{
+    
+}        

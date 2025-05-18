@@ -1,0 +1,28 @@
+    static string ModelPath = string.Empty;
+    static bool IsInitialized = false;
+    static string[] Labels = [];
+    
+    public static async Task Init(string modelPath, string labelsPath)
+    {
+        if (IsInitialized)
+            return;
+
+        if (DeviceInfo.Current.Platform == DevicePlatform.Android)
+        {
+            var path = await FileSystemHelper.CopyResourceFileTo(modelPath, "model.onnx");
+            ModelPath = path;
+
+            var labelsPathCopy = await FileSystemHelper.CopyResourceFileTo(labelsPath, "labels");
+            Labels = await File.ReadAllLinesAsync(labelsPathCopy);
+        }
+        else
+        {
+            ModelPath = modelPath;
+            Labels = await File.ReadAllLinesAsync(labelsPath);
+        }
+    }
+
+	private static readonly Lazy<PredictionEngine<InputModel, OutputModel>> PredictEngine =
+        new(() => CreatePredictEngine());
+
+        

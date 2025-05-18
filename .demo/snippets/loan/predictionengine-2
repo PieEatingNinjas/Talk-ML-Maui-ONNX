@@ -1,0 +1,20 @@
+    static string MLNetModelPath = string.Empty;
+    static bool IsInitialized = false;
+
+    public static async Task Init(string modelPath)
+    {
+        if (IsInitialized)
+            return;
+
+        if (DeviceInfo.Current.Platform == DevicePlatform.Android)
+        {
+            var path = await FileSystemHelper.CopyResourceFileTo(modelPath, Path.GetFileName(modelPath));
+            MLNetModelPath = path;
+        }
+        else
+        {
+            MLNetModelPath = modelPath;
+        }
+
+        IsInitialized = true;
+    }  

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AillBeBack.Loan"
+             Title="Loan Status">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Loan Status Predictor" FontSize="24" HorizontalOptions="Center" />
+            <Label Text="Answer a few questions to assess your loan status" FontSize="14" HorizontalOptions="Center" />
+
+            <Button Text="Fill Defaults" x:Name="FillDefaultsButton" Clicked="FillDefaultsButton_Clicked" />
+
+            <Entry x:Name="NoOfDependentsEntry" Keyboard="Numeric" Placeholder="Number of Dependents" />
+            
+            <Picker x:Name="EducationPicker" Title="Education">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Graduate</x:String>
+                        <x:String>Not Graduate</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Self Employed" />
+            <Switch x:Name="SelfEmployedSwitch" />
+
+            <Entry x:Name="IncomeAnnumEntry" Keyboard="Numeric" Placeholder="Annual Income" />
+
+            <Entry x:Name="LoanAmountEntry" Keyboard="Numeric" Placeholder="Loan Amount" />
+
+            <Entry x:Name="LoanTermEntry" Keyboard="Numeric" Placeholder="Loan Term (months)" />
+
+            <Entry x:Name="CibilScoreEntry" Keyboard="Numeric" Placeholder="CIBIL Score" />
+
+            <Entry x:Name="ResidentialAssetsValueEntry" Keyboard="Numeric" Placeholder="Residential Assets Value" />
+
+            <Entry x:Name="CommercialAssetsValueEntry" Keyboard="Numeric" Placeholder="Commercial Assets Value" />
+
+            <Entry x:Name="LuxuryAssetsValueEntry" Keyboard="Numeric" Placeholder="Luxury Assets Value" />
+
+            <Entry x:Name="BankAssetValueEntry" Keyboard="Numeric" Placeholder="Bank Asset Value" />
+
+
+            <Button Text="Submit" x:Name="SubmitButton" Clicked="SubmitButton_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

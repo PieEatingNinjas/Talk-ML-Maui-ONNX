@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AillBeBack.F1Cars"
+             Title="F1 Cars Recognizer">
+     <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            
+            <Picker x:Name="ImagePicker" />
+
+            <!-- Binding directly to Raw resource won't work on Android... But hey, it's just a demo -->
+            <Image
+                Source="{Binding Source={x:Reference ImagePicker}, Path=SelectedItem}"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <Button Text="Submit" x:Name="SubmitButton" Clicked="SubmitButton_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

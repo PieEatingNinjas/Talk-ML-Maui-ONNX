@@ -1,0 +1,453 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Regression - Costs - MAUI",
+  "description": "",
+  "demos": [
+    {
+      "title": "TO VALIDATE: SHOW model",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "open",
+          "path": "src/AillBeBack/Resources/Raw/MedicalCosts/MedicalCostModel.zip"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "solutionExplorer.removeView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - modelinputoutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "setPresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/maui-modelinputoutput-0",
+            "DEST_PATH": "src/AillBeBack/Features/MedicalCosts/ModelInputOutput.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - classes",
+      "description": "",
+      "steps": [
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/MedicalCosts/ModelInputOutput.cs",
+          "position": "9",
+          "contentPath": "snippets/costs/maui-modelinputoutput-1",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelInput",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/ModelInputOutput.cs",
+          "position": "9:38",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelOutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/ModelInputOutput.cs",
+          "position": "40:44",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - predictionengine",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/maui-predictionengine-0",
+            "DEST_PATH": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - init",
+      "description": "",
+      "steps": [
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "8",
+          "contentPath": "snippets/costs/maui-predictionengine-1",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Init",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "11:28",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Lazy Engine",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "30",
+          "contentPath": "snippets/costs/maui-predictionengine-2",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Lazy field",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "30:31",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - CreateEngine",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "33:38",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "40",
+          "contentPath": "snippets/costs/maui-predictionengine-3",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Predict method",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "40:41",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Predict input",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "40,39:40,55",
+          "highlightWholeLine": false,
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Call Predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "41:41",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - return type",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/MedicalCosts/PredictionEngine.cs",
+          "position": "40,19:40,30",
+          "highlightWholeLine": false,
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - MedicalCosts.xaml.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/medicalcostsxamlcs",
+            "DEST_PATH": "src/AillBeBack/MedicalCosts.xaml.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - buttonclick",
+      "description": "",
+      "steps": [
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/MedicalCosts.xaml.cs",
+          "position": "14",
+          "contentPath": "snippets/costs/maui-submit",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - initialize InputModel",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/MedicalCosts.xaml.cs",
+          "position": "14:22",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - call init",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/MedicalCosts.xaml.cs",
+          "position": "24:24",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - call predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/MedicalCosts.xaml.cs",
+          "position": "25:25",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - navigate",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/MedicalCosts.xaml.cs",
+          "position": "28:28",
+          "zoom": 1.0
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "RUN - App",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.debug.selectandstart",
+          "args": {
+            "name": "App"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

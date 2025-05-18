@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AillBeBack.MedicalCosts"
+             Title="Medical Costs">
+     <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Yearly Medical Costs Input Form" FontSize="24" HorizontalOptions="Center" />
+            <Label Text="Fill in the details below to calculate your yearly medical costs." FontSize="14" HorizontalOptions="Center" />
+
+            <Label Text="Age" />
+            <Entry x:Name="AgeEntry" Keyboard="Numeric" />
+
+            <Label Text="Sex" />
+            <Picker x:Name="SexPicker">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Male</x:String>
+                        <x:String>Female</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="BMI" />
+            <Entry x:Name="BMIEntry" Keyboard="Numeric" />
+
+            <Label Text="Number of children" />
+            <Entry x:Name="ChildrenEntry" Keyboard="Numeric" />
+
+            <Label Text="Smoker?" />
+            <Switch x:Name="SmokerSwitch" />
+
+            <Label Text="Region" />
+            <Picker x:Name="RegionPicker">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Southwest</x:String>
+                        <x:String>Southeast</x:String>
+                        <x:String>Northwest</x:String>
+                        <x:String>Northeast</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Submit" x:Name="SubmitButton" Clicked="SubmitButton_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

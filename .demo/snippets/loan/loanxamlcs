@@ -1,0 +1,32 @@
+using AillBeBack.Features.Loan;
+
+namespace AillBeBack;
+
+public partial class Loan : ContentPage
+{
+	public Loan()
+	{
+		InitializeComponent();
+	}
+
+	private async void SubmitButton_Clicked(object sender, EventArgs e)
+	{
+		
+
+	}
+
+	private void FillDefaultsButton_Clicked(object sender, EventArgs e)
+	{
+        NoOfDependentsEntry.Text = "2";
+		EducationPicker.SelectedIndex = 0; // "Graduate"
+		SelfEmployedSwitch.IsToggled = false;
+		IncomeAnnumEntry.Text = "9600000";
+		LoanAmountEntry.Text = "29900000";
+		LoanTermEntry.Text = "12";
+		CibilScoreEntry.Text = "778";
+		ResidentialAssetsValueEntry.Text = "2400000";
+		CommercialAssetsValueEntry.Text = "17600000";
+		LuxuryAssetsValueEntry.Text = "22700000";
+		BankAssetValueEntry.Text = "8000000";
+	}
+}

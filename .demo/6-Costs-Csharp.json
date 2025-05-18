@@ -1,0 +1,1110 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Regression - Costs - CSharp (Trainer)",
+  "description": "",
+  "demos": [
+    {
+      "title": "Overview",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net code/overview.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Title",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net code/title.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN csv",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "datasets/Medical Costs/medical_costs.csv"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - MedicalCostModelTrainer csproj",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "close"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "open",
+          "path": "src/MedicalCostModelTrainer/MedicalCostModelTrainer.csproj"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closePanel"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - dependencies",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/MedicalCostModelTrainer.csproj",
+          "position": "10:12",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - ModelInputOutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "setPresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closePanel"
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/modelinputoutput-0",
+            "DEST_PATH": "src/MedicalCostModelTrainer/ModelInputOutput.cs"
+          }
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelInputOutput.cs",
+          "position": "5",
+          "contentPath": "snippets/costs/modelinputoutput-1",
+          "lineInsertionDelay": 100
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Input",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelInputOutput.cs",
+          "position": "5:34",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Output",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelInputOutput.cs",
+          "position": "36:40",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - trainer",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/modeltrainer-0",
+            "DEST_PATH": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - ctor",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "9",
+          "contentPath": "snippets/costs/modeltrainer-1",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ctor",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "14:19",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - LoadData",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "23",
+          "contentPath": "snippets/costs/modeltrainer-2",
+          "lineInsertionDelay": 150
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "27",
+          "contentPath": "snippets/costs/modeltrainer-3",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - LoadData",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "28:29",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - SplitData",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "31",
+          "contentPath": "snippets/costs/modeltrainer-5",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - SplitData method",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "32:36",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Call SplitData Data",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "24",
+          "contentPath": "snippets/costs/modeltrainer-4",
+          "lineInsertionDelay": 150
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "24:24",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Data Sets",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "24,9:24,34",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Call BuildAndTrain",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "25",
+          "contentPath": "snippets/costs/modeltrainer-6",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - BuildAndTrain",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "25:25",
+          "highlightWholeLine": true,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - TrainData",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "25,40:25,49",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - BuildAndTrain",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "39",
+          "contentPath": "snippets/costs/modeltrainer-7",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "41,24:46,15",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE One-Hot explanation",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net code/onehotencoding.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "41,24:46,15",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding-input",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "43,60:43,68",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding-output",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "43,43:43,58",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding-Sex",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "44,57:44,62",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - OneHotEncoding-Smoker",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "45,60:45,68",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Convert Single",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "47",
+          "contentPath": "snippets/costs/modeltrainer-8",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT -convert",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "47,54:47,65",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Convert-input",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "47,83:47,93",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Convert-type",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "47,95:47,110",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Convert-output",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "47,66:47,81",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Convert-Age",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "48,78:48,83",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Concatinate",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "49",
+          "contentPath": "snippets/costs/modeltrainer-9",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Concatinate",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "49,43:49,54",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Concatinate - labels",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "49,67:49,149",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Concatinate - features",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "49,55:49,65",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - regression.sdca",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "50",
+          "contentPath": "snippets/costs/modeltrainer-10",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Regression",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "50,32:50,42",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Sdca",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "50,52:50,56",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - label",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "50,88:50,118",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - features",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "50,57:50,86",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Fit",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "51",
+          "contentPath": "snippets/costs/modeltrainer-11",
+          "lineInsertionDelay": 150
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "52:53",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - BuildAndTrainModel",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "39:54",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - EvaluateModel",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "26",
+          "contentPath": "snippets/costs/modeltrainer-12",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Call Evaluate",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "26:26",
+          "highlightWholeLine": true,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Evaluate test",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "26,30:26,38",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - EvaluateModel code",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "57",
+          "contentPath": "snippets/costs/modeltrainer-13",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Transform",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "60",
+          "highlightWholeLine": true,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Evaluate",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "61",
+          "highlightWholeLine": true,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Highlight - Evaluation Predictions",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "61,54:61,65",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Evaluation Label",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "61,67:61,97",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Metrics",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "63:66",
+          "highlightWholeLine": true,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE: Metrics explanation",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net code/metrics.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Save Model",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs"
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "27",
+          "contentPath": "snippets/costs/modeltrainer-14",
+          "lineInsertionDelay": 150
+        },
+        {
+          "action": "insert",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "68",
+          "contentPath": "snippets/costs/modeltrainer-15",
+          "lineInsertionDelay": 150
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - Program.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/costs/program",
+            "DEST_PATH": "src/MedicalCostModelTrainer/Program.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "RUN - Trainer",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.debug.selectandstart",
+          "args": {
+            "config": "Medical Cost Trainer"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

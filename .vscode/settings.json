@@ -1,0 +1,15 @@
+{
+    "workbench.activityBar.location": "default",
+    "dotnet.defaultSolution": "talk-ml-maui-onnx.slnx",
+    "demoTime.highlightBorderColor": "purple",
+    "demoTime.highlightBackground": "rgba(0, 0, 0, 0.5)",
+    "demoTime.highlightBlur": 1,
+    "demoTime.highlightOpacity": 0.5,
+    "dotnet.automaticallySyncWithActiveItem": true,
+    "demoTime.previousEnabled": true,
+    "terminal.integrated.fontSize": 25 ,
+    "editor.fontSize": 16,
+    "terminal.integrated.defaultLocation": "editor",
+    "workbench.editor.showTabs": "none",
+    "workbench.statusBar.visible": true
+}

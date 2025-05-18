@@ -1,0 +1,12 @@
+    private ITransformer BuildAndTrainModel(IDataView trainData)
+    {
+        var pipeline = _mlContext.Transforms.Categorical.OneHotEncoding(
+            [
+                new InputOutputColumnPair("RegionEncoded", "Region"),
+                new InputOutputColumnPair("SexEncoded", "Sex"),
+                new InputOutputColumnPair("SmokerEncoded", "Smoker")
+            ])
+       
+    }
+
+    

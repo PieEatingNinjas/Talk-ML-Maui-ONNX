@@ -1,0 +1,427 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Classification - CLI",
+  "description": "",
+  "demos": [
+    {
+      "title": "Title",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/title.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN csv",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "datasets/Loan/loan_approval_dataset.csv"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE Script command",
+      "description": "",
+      "steps": [
+        {
+          "action": "close"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script.md"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 5000
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_still.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE Script label-col",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_2.md"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 2000
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_2_still.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE Script split-ratio",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_3.md"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 1500
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_3_still.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE script train-time",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_4.md"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 1500
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_4_still.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE script Name",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_5.md"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 1500
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_5_still.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE script ignore-cols",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/script_6.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "EXECUTE - Script",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeTerminalCommand",
+          "command": "cd src"
+        },
+        {
+          "action": "executeTerminalCommand",
+          "command": "~/.dotnet/tools/mlnet classification --dataset '/Users/pieter/Sources/talk-ml-maui-private/datasets/Loan/loan_approval_dataset.csv' --label-col loan_status --ignore-cols loan_id --train-time 15 --name MyMLProject --split-ratio 0.2"
+        }
+        ,
+        {
+          "action": "waitForTimeout",
+          "timeout": 15000
+        },
+        {
+          "action": "waitForInput"
+        },
+        {
+          "action": "closeTerminal"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SLIDE Output",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/output.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - consumption.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "demo-time.togglePresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.closePanel"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "editor.action.toggleWordWrap"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "positionCursor",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "10"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - MyMLProject Class",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "10:10",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelInput",
+      "description": "",
+      "steps": [
+        {
+          "action": "setPresentationView"
+        },
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "16:66",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelOutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "74:121",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelOutput-label/score",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "115:119",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT ModelPath field",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "125:125",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },  
+    {
+      "title": "HIGHLIGHT - PredictEngine",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "127:135",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - context",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "132:132",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - load model",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "133:133",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Create",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "134:134",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - PredictAll",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MyMLProject/MyMLProject.consumption.cs",
+          "position": "142:147",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

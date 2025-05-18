@@ -1,0 +1,16 @@
+using AillBeBack.Features.MedicalCosts;
+
+namespace AillBeBack;
+
+public partial class MedicalCosts : ContentPage
+{
+	public MedicalCosts()
+	{
+		InitializeComponent();
+	}
+
+	private async void SubmitButton_Clicked(object sender, EventArgs e)
+	{
+		
+	}
+}

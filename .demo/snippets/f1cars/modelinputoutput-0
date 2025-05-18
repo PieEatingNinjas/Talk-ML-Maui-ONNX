@@ -1,0 +1,6 @@
+using Microsoft.ML.Data;
+using Microsoft.ML.Transforms.Image;
+
+namespace AillBeBack.Features.F1Cars;
+
+

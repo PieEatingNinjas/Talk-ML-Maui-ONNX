@@ -1,0 +1,446 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Classification - MAUI",
+  "description": "",
+  "demos": [
+    {
+      "title": "OPEN maui csproj",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "open",
+          "path": "src/AillBeBack/AillBeBack.csproj"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "solutionExplorer.removeView"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT Maui NuGet",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/AillBeBack.csproj",
+          "position": "64:65",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT Maui EnableMlUnspported",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/AillBeBack.csproj",
+          "position": "36:36",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "SHOW model",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "open",
+          "path": "src/AillBeBack/Resources/Raw/Loan/MyMLProject.mlnet"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "solutionExplorer.removeView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE modelinputoutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "setPresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/loan/modelinputoutput-0",
+            "DEST_PATH": "src/AillBeBack/Features/Loan/ModelInputOutput.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - modelinputoutput classes",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "src/AillBeBack/Features/Loan/ModelInputOutput.cs",
+          "position": "5",
+          "contentPath": "snippets/loan/modelinputoutput-1",
+          "lineInsertionDelay": 25
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE predictionengine",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/loan/predictionengine-0",
+            "DEST_PATH": "src/AillBeBack/Features/Loan/PredictionEngine.cs"
+          }
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 500
+        },
+        {
+          "action": "insert",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "13",
+          "contentPath": "snippets/loan/predictionengine-1",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Path",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "13:13",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "REPLACE - init",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "13",
+          "contentPath": "snippets/loan/predictionengine-2",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - engine Init",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "16:32",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - copy model",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "23:23",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - filepath",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "24:24",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - filepath iOS",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/Loan/PredictionEngine.cs",
+          "position": "28:28",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - Loan.xaml.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/loan/loanxamlcs",
+            "DEST_PATH": "src/AillBeBack/Loan.xaml.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Submit",
+      "description": "",
+      "steps": [
+        {
+          "action": "insert",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "14",
+          "contentPath": "snippets/loan/submitbuttonclick",
+          "lineInsertionDelay": 100
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Model creation",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "14:28",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Engine Init",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "30:30",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "31:31",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Score of Label 1",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "32:32",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Navigate",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Loan.xaml.cs",
+          "position": "34:34",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "RUN - App",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.debug.selectandstart",
+          "args": {
+            "name": "App"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

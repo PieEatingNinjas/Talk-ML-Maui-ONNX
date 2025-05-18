@@ -1,0 +1,15 @@
+		await F1CarPredictionEngine.Init("F1Cars/model.onnx", "F1Cars/labels.txt");
+
+		var img = ImagePicker.SelectedItem.ToString()!;
+		if (img is not null)
+		{
+			var stream = await FileSystem.OpenAppPackageFileAsync(img);
+			var result = F1CarPredictionEngine.Predict(stream);
+			var prediction = result.MaxBy(x => x.Value);
+
+			await Shell.Current.GoToAsync($"f1result?img={img}&label={prediction.Key}&score={prediction.Value}");
+		}
+		else
+		{
+			await DisplayAlert("Error", "Please select an image.", "OK");
+		}

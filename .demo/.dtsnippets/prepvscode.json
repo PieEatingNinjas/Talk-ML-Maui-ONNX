@@ -1,0 +1,17 @@
+[
+  {
+    "action": "executeVSCodeCommand",
+    "command": "solutionExplorer.removeView"
+  },
+  {
+    "action": "setPresentationView"
+  },
+  {
+    "action": "executeVSCodeCommand",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "action": "executeVSCodeCommand",
+    "command": "workbench.action.zoomReset"
+  }
+]

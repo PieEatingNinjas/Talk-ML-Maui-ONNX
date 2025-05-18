@@ -1,0 +1,545 @@
+{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "/Users/pieter/Sources/talk-ml-maui-private/datasets/Loan/loan_approval_dataset.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "loan_id",
+        "ColumnPurpose": "Ignore",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "no_of_dependents",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "education",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "self_employed",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "income_annum",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "loan_amount",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "loan_term",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "cibil_score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "residential_assets_value",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "commercial_assets_value",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "luxury_assets_value",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "bank_asset_value",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "loan_status",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.975807757057757,
+        "RuntimeInSeconds": 0.16,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "education",
+              "self_employed"
+            ],
+            "InputColumnNames": [
+              "education",
+              "self_employed"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "InputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ]
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "education",
+              "self_employed",
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "loan_status",
+            "InputColumnName": "loan_status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e4": {
+            "NumberOfLeaves": 8,
+            "MinimumExampleCountPerLeaf": 11,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 116,
+            "FeatureFraction": 0.9141720045170797,
+            "LearningRate": 0.18598750236306083,
+            "LabelColumnName": "loan_status",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.9753383190883191,
+        "RuntimeInSeconds": 0.23,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "education",
+              "self_employed"
+            ],
+            "InputColumnNames": [
+              "education",
+              "self_employed"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "InputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ]
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "education",
+              "self_employed",
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "loan_status",
+            "InputColumnName": "loan_status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e5": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 0.9476715,
+            "LabelColumnName": "loan_status",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.9739138176638176,
+        "RuntimeInSeconds": 0.258,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "education",
+              "self_employed"
+            ],
+            "InputColumnNames": [
+              "education",
+              "self_employed"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "InputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ]
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "education",
+              "self_employed",
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "loan_status",
+            "InputColumnName": "loan_status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e5": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "loan_status",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.9739138176638176,
+        "RuntimeInSeconds": 0.236,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "education",
+              "self_employed"
+            ],
+            "InputColumnNames": [
+              "education",
+              "self_employed"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "InputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ]
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "education",
+              "self_employed",
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "loan_status",
+            "InputColumnName": "loan_status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e5": {
+            "NumberOfTrees": 5,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "loan_status",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.9739138176638176,
+        "RuntimeInSeconds": 0.233,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e5 * e11",
+          "e0": {
+            "OutputColumnNames": [
+              "education",
+              "self_employed"
+            ],
+            "InputColumnNames": [
+              "education",
+              "self_employed"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "InputColumnNames": [
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ]
+          },
+          "e11": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "InputColumnNames": [
+              "education",
+              "self_employed",
+              "no_of_dependents",
+              "income_annum",
+              "loan_amount",
+              "loan_term",
+              "cibil_score",
+              "residential_assets_value",
+              "commercial_assets_value",
+              "luxury_assets_value",
+              "bank_asset_value"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e3": {
+            "OutputColumnName": "loan_status",
+            "InputColumnName": "loan_status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e5": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 9,
+            "FeatureFraction": 0.9951523,
+            "LabelColumnName": "loan_status",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "Concatenate",
+      "e3": "MapValueToKey",
+      "e4": "FastTreeOva",
+      "e5": "FastForestOva",
+      "e6": "LightGbmMulti",
+      "e7": "LbfgsLogisticRegressionOva",
+      "e8": "LbfgsMaximumEntropyMulti",
+      "e9": "SdcaMaximumEntropyMulti",
+      "e10": "SdcaLogisticRegressionOva",
+      "e11": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * (e4 + e5 + e6 + e7 + e8 + e9 + e10) * e11",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "/Users/pieter/Sources/talk-ml-maui-private/src/MyMLProject/MyMLProject.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 15,
+    "LabelColumn": "loan_status",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "TrainValidateSplitValidationOption",
+      "SplitRatio": 0.2
+    }
+  }
+}

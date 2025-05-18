@@ -1,0 +1,6 @@
+
+    private (IDataView trainData, IDataView testData) SplitData(IDataView data)
+    {
+        var trainTestSplit = _mlContext.Data.TrainTestSplit(data, testFraction: 0.2);
+        return (trainTestSplit.TrainSet, trainTestSplit.TestSet);
+    }

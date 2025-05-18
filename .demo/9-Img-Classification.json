@@ -1,0 +1,678 @@
+{
+  "$schema": "https://demotime.elio.dev/demo-time.schema.json",
+  "title": "Classification - Images - Custom Vision",
+  "description": "",
+  "demos": [
+    {
+      "title": "Slide Azure Custom Vision",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/acv.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - customvision.ai",
+      "description": "",
+      "steps": [
+        {
+          "action": "openWebsite",
+          "url": "https://customvision.ai/"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "Slide How to use",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/onnx/howtouse.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - netron.app",
+      "description": "",
+      "steps": [
+        {
+          "action": "openWebsite",
+          "url": "https://netron.app/"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN maui csproj",
+      "description": "",
+      "steps": [
+        {
+          "action": "open",
+          "path": "src/AillBeBack/AillBeBack.csproj"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Nuget",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/AillBeBack.csproj",
+          "position": "67:70"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Nuget Extensions",
+      "description": "",
+      "steps": [
+        {
+          "action":"unselect",
+          "path": "src/AillBeBack/AillBeBack.csproj"
+        },
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/AillBeBack.csproj",
+          "position": "70:70"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN labels",
+      "description": "",
+      "steps": [
+        {
+          "action": "closeAll"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.view.explorer"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.collapseExplorerFolders"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.files.action.showActiveFileInExplorer"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 250
+        },
+        {
+          "action": "open",
+          "path": "src/AillBeBack/Resources/Raw/F1Cars/labels.txt"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "solutionExplorer.removeView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomIn"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - modelinputoutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.toggleSidebarVisibility"
+        },
+        {
+          "action": "setPresentationView"
+        },
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.zoomReset"
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 150
+        },
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/f1cars/modelinputoutput-0",
+            "DEST_PATH": "src/AillBeBack/Features/F1Cars/ModelInputOutput.cs"
+          }
+        },
+        {
+          "action": "waitForTimeout",
+          "timeout": 1000
+        },
+        {
+          "action": "insert",
+          "path": "src/AillBeBack/Features/F1Cars/ModelInputOutput.cs",
+          "position": "6",
+          "contentPath": "snippets/f1cars/modelinputoutput-1",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelInput",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/ModelInputOutput.cs",
+          "position": "6:10",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ModelOutput",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/ModelInputOutput.cs",
+          "position": "12:16",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN-CREATE - predictionengine",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/f1cars/predictionengine-0",
+            "DEST_PATH": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - init",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "10",
+          "contentPath": "snippets/f1cars/predictionengine-1",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - labels path",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "14,53:14,70",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - init Labels",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "30:30",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - CreatePredictEngine",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "37",
+          "contentPath": "snippets/f1cars/predictionengine-2",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Pipeline",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "41:53",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Resize",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "41:46",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Extract Pixels",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "47:49",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - ONNX",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "50:53",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Path",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "51:51",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Input",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "52:52",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Output",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "53:53",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Fit",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "55:55",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Create",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "57:57",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "60",
+          "contentPath": "snippets/f1cars/predictionengine-3",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Image",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "62:62",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Prediction",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "64:64",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Return",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
+          "position": "69:70",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "OPEN - F1Cars.xaml.cs",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/copy_and_open.json",
+          "args": {
+            "CONTENT_PATH": ".demo/snippets/f1cars/f1carsxamlcs",
+            "DEST_PATH": "src/AillBeBack/F1Cars.xaml.cs"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "INSERT - Submit",
+      "description": "",
+      "steps": [
+        {
+          "action": "unselect",
+          "path": "src/AillBeBack/F1Cars.xaml.cs"
+        },
+        {
+          "action": "replace",
+          "path": "src/AillBeBack/F1Cars.xaml.cs",
+          "position": "30",
+          "contentPath": "snippets/f1cars/maui-submit",
+          "lineInsertionDelay": 50
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Init Maui",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/F1Cars.xaml.cs",
+          "position": "30:30",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Get Stream and predict",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/F1Cars.xaml.cs",
+          "position": "35:36",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Get highest scoring label",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/F1Cars.xaml.cs",
+          "position": "37:37",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - navigation",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/AillBeBack/F1Cars.xaml.cs",
+          "position": "39:39",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "RUN - App",
+      "description": "",
+      "steps": [
+        {
+          "action": "executeVSCodeCommand",
+          "command": "workbench.action.debug.selectandstart",
+          "args": {
+            "name": "App"
+          }
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    }
+  ]
+}

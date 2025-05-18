@@ -1,0 +1,20 @@
+[
+    {
+        "action": "copy",
+        "path": "{CONTENT_PATH}",
+        "dest": "{DEST_PATH}",
+        "overwrite": true
+      },
+      {
+        "action": "waitForTimeout",
+        "timeout": 100
+      },
+      {
+        "action": "open",
+        "path": "{DEST_PATH}"
+      },
+      {
+        "action": "executeVSCodeCommand",
+        "command": "scrollEditorTop"
+      }
+]

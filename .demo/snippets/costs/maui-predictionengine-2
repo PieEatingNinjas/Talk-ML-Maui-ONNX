@@ -1,0 +1,12 @@
+    private static readonly Lazy<PredictionEngine<InputModel, OutputModel>> PredictEngine =
+        new (() => CreatePredictEngine());
+
+    private static PredictionEngine<InputModel, OutputModel> CreatePredictEngine()
+    {
+        var mlContext = new MLContext();
+        ITransformer mlModel = mlContext.Model.Load(ModelPath, out var _);
+        return mlContext.Model.CreatePredictionEngine<InputModel, OutputModel>(mlModel);
+    }
+
+
+    

@@ -1,0 +1,11 @@
+    
+    private void EvaluateModel(ITransformer model, IDataView testData)
+    {
+        var predictions = model.Transform(testData);
+        var metrics = _mlContext.Regression.Evaluate(predictions, labelColumnName: "MedicalCost");
+
+        Console.WriteLine($"MeanAbsError: {metrics.MeanAbsoluteError}"); 
+        Console.WriteLine($"MeanSquaredError: {metrics.MeanSquaredError}");
+        Console.WriteLine($"R-squared: {metrics.RSquared}");
+        Console.WriteLine($"RMSE: {metrics.RootMeanSquaredError}");
+    }

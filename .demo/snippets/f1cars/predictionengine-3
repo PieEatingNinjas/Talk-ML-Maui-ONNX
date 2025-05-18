@@ -1,0 +1,12 @@
+    public static Dictionary<string, float> Predict(Stream input)
+    {
+        var img = MLImage.CreateFromStream(input);
+
+        var prediction = PredictEngine.Value.Predict(new InputModel{ Image = img });
+
+        if(prediction.ModelOutput is null)
+            return [];
+
+        return Labels.Select((label, index) => new { label, index })
+            .ToDictionary(x => x.label, x => prediction.ModelOutput[x.index]);
+    }

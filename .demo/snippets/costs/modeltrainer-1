@@ -1,0 +1,18 @@
+    private readonly string _dataPath;
+    private readonly string _modelOutputPath;
+
+    private readonly MLContext _mlContext;
+
+    public ModelTrainer(string dataPath, string modelOutputPath)
+    {
+        _dataPath = dataPath;
+        _modelOutputPath = modelOutputPath;
+        _mlContext = new MLContext();
+    }
+
+    public void TrainModel()
+    {
+
+    
+    }
+
