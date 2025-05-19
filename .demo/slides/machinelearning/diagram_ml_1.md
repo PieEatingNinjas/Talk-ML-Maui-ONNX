@@ -8,8 +8,8 @@ transition: fadeIn
 
 ```mermaid
 graph TD
-    ML1[Examples]
-    ML2[Answers]
+    ML1[Example Inputs]
+    ML2[Example Outputs]
     ML1 --> ML3[Learning Algorithm]
     ML2 --> ML3
     ML3 --> ML4[Model]
