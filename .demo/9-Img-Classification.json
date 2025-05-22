@@ -420,40 +420,6 @@
       }
     },
     {
-      "title": "HIGHLIGHT - Input",
-      "description": "",
-      "steps": [
-        {
-          "action": "highlight",
-          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
-          "position": "52:52",
-          "highlightWholeLine": false,
-          "zoom": 1
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "HIGHLIGHT - Output",
-      "description": "",
-      "steps": [
-        {
-          "action": "highlight",
-          "path": "src/AillBeBack/Features/F1Cars/PredictionEngine.cs",
-          "position": "53:53",
-          "highlightWholeLine": false,
-          "zoom": 1
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
       "title": "HIGHLIGHT - Fit",
       "description": "",
       "steps": [
