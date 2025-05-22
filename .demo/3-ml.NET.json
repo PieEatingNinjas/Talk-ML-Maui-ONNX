@@ -64,20 +64,6 @@
       }
     },
     {
-      "title": "Flavors Marked",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/mlNet/flavors-marked.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
       "title": "AutoML",
       "description": "",
       "steps": [

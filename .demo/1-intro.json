@@ -40,20 +40,6 @@
       }
     },
     {
-      "title": "Sponsor",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/intro/sponsor.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
       "title": "Agenda",
       "description": "",
       "steps": [

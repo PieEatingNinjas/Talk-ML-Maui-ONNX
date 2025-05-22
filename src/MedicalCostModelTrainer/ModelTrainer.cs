@@ -57,8 +57,8 @@ public class ModelTrainer
     
     private void EvaluateModel(ITransformer model, IDataView testData)
     {
-        var predictions = model.Transform(testData);
-        var metrics = _mlContext.Regression.Evaluate(predictions, labelColumnName: "MedicalCost");
+        var metrics = _mlContext.Regression.Evaluate(model.Transform(testData), labelColumnName: "MedicalCost");
+        
 
         Console.WriteLine($"MeanAbsError: {metrics.MeanAbsoluteError}"); 
         Console.WriteLine($"MeanSquaredError: {metrics.MeanSquaredError}");

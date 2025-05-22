@@ -21,7 +21,7 @@ Auto ML CLI tool
 Auto ML GUI tool in Visual Studio
 
 - Explores algorithms & settings to find the best model
-- Supports CSV, TSV, TXT, images and <text-highlight highlight-color="#ff006e" delay="300" duration="500" direction="left-to-right"> SQL Server data </text-highlight>
+- Supports CSV, TSV, TXT, <text-highlight highlight-color="#ff006e" delay="300" duration="500" direction="left-to-right"> images and SQL Server data </text-highlight>
 - Generates trained model (.zip)
 - Generates C# code for model loading and prediction
 - <text-highlight highlight-color="#ff006e" delay="300" duration="500" direction="left-to-right">Local (CPU/GPU) or remote (Azure) training</text-highlight>

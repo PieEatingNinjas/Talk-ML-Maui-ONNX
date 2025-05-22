@@ -319,6 +319,38 @@
       }
     },
     {
+      "title": "HIGHLIGHT - Split",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "34:34",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - Split return",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "35:35",
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "INSERT - Call SplitData Data",
       "description": "",
       "steps": [
@@ -907,7 +939,7 @@
       }
     },
     {
-      "title": "HIGHLIGHT - Evaluate test",
+      "title": "HIGHLIGHT - testdata",
       "description": "",
       "steps": [
         {
@@ -945,7 +977,7 @@
       }
     },
     {
-      "title": "HIGHLIGHT - Transform",
+      "title": "HIGHLIGHT - Evaluate",
       "description": "",
       "steps": [
         {
@@ -962,30 +994,13 @@
       }
     },
     {
-      "title": "HIGHLIGHT - Evaluate",
+      "title": "HIGHLIGHT - Regression evaluation",
       "description": "",
       "steps": [
         {
           "action": "highlight",
           "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
-          "position": "61",
-          "highlightWholeLine": true,
-          "zoom": 1
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Highlight - Evaluation Predictions",
-      "description": "",
-      "steps": [
-        {
-          "action": "highlight",
-          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
-          "position": "61,54:61,65",
+          "position": "60,34:60,53",
           "highlightWholeLine": false,
           "zoom": 1
         }
@@ -996,13 +1011,30 @@
       }
     },
     {
-      "title": "HIGHLIGHT - Evaluation Label",
+      "title": "HIGHLIGHT - Evaluate input",
       "description": "",
       "steps": [
         {
           "action": "highlight",
           "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
-          "position": "61,67:61,97",
+          "position": "60,70:60,78",
+          "highlightWholeLine": false,
+          "zoom": 1
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
+      "title": "HIGHLIGHT - MedicalCosts",
+      "description": "",
+      "steps": [
+        {
+          "action": "highlight",
+          "path": "src/MedicalCostModelTrainer/ModelTrainer.cs",
+          "position": "60, 81: 60,111",
           "highlightWholeLine": false,
           "zoom": 1
         }
