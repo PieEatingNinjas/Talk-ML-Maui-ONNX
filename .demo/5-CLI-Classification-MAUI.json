@@ -424,23 +424,24 @@
         "start": "vm",
         "end": "pass-filled"
       }
-    },
-    {
-      "title": "RUN - App",
-      "description": "",
-      "steps": [
-        {
-          "action": "executeVSCodeCommand",
-          "command": "workbench.action.debug.selectandstart",
-          "args": {
-            "name": "App"
-          }
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
     }
+    // ,
+    // {
+    //   "title": "RUN - App",
+    //   "description": "",
+    //   "steps": [
+    //     {
+    //       "action": "executeVSCodeCommand",
+    //       "command": "workbench.action.debug.selectandstart",
+    //       "args": {
+    //         "name": "App"
+    //       }
+    //     }
+    //   ],
+    //   "icons": {
+    //     "start": "vm",
+    //     "end": "pass-filled"
+    //   }
+    // }
   ]
 }
