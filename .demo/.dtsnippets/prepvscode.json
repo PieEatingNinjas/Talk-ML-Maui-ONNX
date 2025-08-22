@@ -1,8 +1,8 @@
 [
-  {
-    "action": "executeVSCodeCommand",
-    "command": "solutionExplorer.removeView"
-  },
+  // {
+  //   "action": "executeVSCodeCommand",
+  //   "command": "solutionExplorer.removeView"
+  // },
   {
     "action": "setPresentationView"
   },

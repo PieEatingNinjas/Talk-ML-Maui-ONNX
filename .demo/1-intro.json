@@ -9,7 +9,7 @@
       "steps": [
         {
           "action": "snippet",
-          "contentPath": ".dtsnippets/prepvscode.json"
+          "contentPath": "/.demo/.dtsnippets/prepvscode.json"
         },
         {
           "action": "executeVSCodeCommand",
@@ -32,20 +32,6 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/intro/about-me.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "Sponsor",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/intro/sponsor.md"
         }
       ],
       "icons": {

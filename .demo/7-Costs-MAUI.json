@@ -38,10 +38,10 @@
           "action": "waitForTimeout",
           "timeout": 250
         },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "solutionExplorer.removeView"
-        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "solutionExplorer.removeView"
+        // },
         {
           "action": "executeVSCodeCommand",
           "command": "workbench.action.zoomIn"

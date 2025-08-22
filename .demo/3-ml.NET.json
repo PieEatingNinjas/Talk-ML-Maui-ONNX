@@ -97,8 +97,8 @@
       "description": "",
       "steps": [
         {
-          "action": "openSlide",
-          "path": "/.demo/slides/mlNet/modelbuilder_demo.md"
+          "action": "open",
+          "path": "/.demo/slides/mlNet/assets/ml-dotnet-model-builder.gif"
         }
       ],
       "icons": {

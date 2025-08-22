@@ -150,10 +150,10 @@
           "action": "open",
           "path": "src/AillBeBack/Resources/Raw/F1Cars/labels.txt"
         },
-        {
-          "action": "executeVSCodeCommand",
-          "command": "solutionExplorer.removeView"
-        },
+        // {
+        //   "action": "executeVSCodeCommand",
+        //   "command": "solutionExplorer.removeView"
+        // },
         {
           "action": "executeVSCodeCommand",
           "command": "workbench.action.zoomIn"

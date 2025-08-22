@@ -10,4 +10,3 @@ transition: fadeIn
 - **May not capture all domain-specific nuances**
   - Which you can with a custom pipeline
 - **Generated code is editable** for further tuning and control
-
