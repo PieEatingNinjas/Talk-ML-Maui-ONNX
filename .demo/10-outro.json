@@ -27,7 +27,7 @@
       "steps": [
         {
           "action": "openSlide",
-          "path": "slides/outro/thankyou.md"
+          "path": "/.demo/slides/outro/thankyou.md"
         }
       ],
       "icons": {

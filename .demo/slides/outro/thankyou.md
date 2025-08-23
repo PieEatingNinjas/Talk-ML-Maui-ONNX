@@ -1,8 +1,10 @@
 ---
 theme: quantum
-layout: intro
+layout: image-right
+image: ".demo/assets/feedback.png"
 transition: fadeIn
 ---
 
-# Thank you!!
-Questions? 
+# Thank you!
+- Questions?
+- Please, give feedback 🙏 -->
