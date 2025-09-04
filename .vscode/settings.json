@@ -11,5 +11,5 @@
     "editor.fontSize": 16,
     "terminal.integrated.defaultLocation": "editor",
     "workbench.editor.showTabs": "none",
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": false
 }

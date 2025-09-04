@@ -36,20 +36,6 @@
       }
     },
     {
-      "title": "Why",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/onnx/why.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
       "title": "Zoo",
       "description": "",
       "steps": [

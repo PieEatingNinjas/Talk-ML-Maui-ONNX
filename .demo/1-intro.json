@@ -9,7 +9,7 @@
       "steps": [
         {
           "action": "snippet",
-          "contentPath": "/.demo/.dtsnippets/prepvscode.json"
+          "contentPath": ".dtsnippets/prepvscode.json"
         },
         {
           "action": "executeVSCodeCommand",

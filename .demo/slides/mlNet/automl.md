@@ -5,8 +5,10 @@ transition: fadeIn
 ---
 
 # About AutoML (in ML.NET)
-- **Easy starting point** – great for beginners and fast prototyping
-- **Tries multiple models & settings** to find a good fit automatically
-- **May not capture all domain-specific nuances**
-  - Which you can with a custom pipeline
-- **Generated code is editable** for further tuning and control
+- **What it does** - Tries many models/settings to find a good fit
+- **Great for** - Quick starts and prototyping 
+- **But** - Doesn’t capture all domain nuances
+- **However** - Generated code is editable
+- **Two flavors**:
+  - CLI Tool: file-based (CSV/TSV/TXT), local CPU Training
+  - Model Builder (VS): GUI inside VS, more data types (SQL, images, ...), local/GPU/Azure Training

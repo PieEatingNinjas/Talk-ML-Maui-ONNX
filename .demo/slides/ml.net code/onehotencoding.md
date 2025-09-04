@@ -6,14 +6,15 @@ transition: fadeIn
 
 # One-Hot Encoding
 
-One-hot encoding turns a `categorical value` (like "male" or "female") into a `binary vector`.
+One-hot encoding turns a `categorical value` (like "Cat", "Dog" or "Bird") into a `binary vector`.
 
 ```
-"female" → [1, 0]
-"male"   → [0, 1]
+"Cat"  → [1, 0, 0]
+"Dog"  → [0, 1, 0]
+"Bird" → [0, 0, 1]
 ```
 
-
-If you convert "female" to 0.0 and "male" to 1.0, the model might assume:
-   - "male" is greater than "female"
-   - There’s a meaningful numeric relationship between categories
+If you just assign numbers instead (Cat = 0, Dog = 1, Bird = 2), the model might assume:
+- Dog > Cat
+- Bird is “close to” Dog
+- There’s a numeric relationship between categories (which is wrong)

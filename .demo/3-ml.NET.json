@@ -36,20 +36,6 @@
       }
     },
     {
-      "title": "Why?",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/mlNet/why.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
       "title": "Flavors",
       "description": "",
       "steps": [
@@ -70,35 +56,6 @@
         {
           "action": "openSlide",
           "path": "/.demo/slides/mlNet/automl.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
-    {
-      "title": "AutoML Builder vs CLI",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/mlNet/buildervscli.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    }
-    ,
-    {
-      "title": "Model Builder Demo",
-      "description": "",
-      "steps": [
-        {
-          "action": "open",
-          "path": "/.demo/slides/mlNet/assets/ml-dotnet-model-builder.gif"
         }
       ],
       "icons": {

@@ -4,7 +4,9 @@ layout: default
 transition: fadeIn
 ---
 
-# What is ONNX?
+# What is ONNX (and why should you care?)
 - Open Neural Network Exchange
-- An **open standard** for representing machine learning models.
-- Developed by Microsoft and Facebook to improve **interoperability** between ML tools.
+- Open format to save and share ML models
+- Works across frameworks
+  - Export from PyTorch/TensorFlow and run anywhere (CPU/GPU)
+- Directly supported in ML.NET

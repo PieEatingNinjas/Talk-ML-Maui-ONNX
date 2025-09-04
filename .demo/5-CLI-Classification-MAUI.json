@@ -35,11 +35,6 @@
           "action": "waitForTimeout",
           "timeout": 250
         }
-        // ,
-        // {
-        //   "action": "executeVSCodeCommand",
-        //   "command": "solutionExplorer.removeView"
-        // }
       ],
       "icons": {
         "start": "vm",
@@ -427,23 +422,5 @@
         "end": "pass-filled"
       }
     }
-    // ,
-    // {
-    //   "title": "RUN - App",
-    //   "description": "",
-    //   "steps": [
-    //     {
-    //       "action": "executeVSCodeCommand",
-    //       "command": "workbench.action.debug.selectandstart",
-    //       "args": {
-    //         "name": "App"
-    //       }
-    //     }
-    //   ],
-    //   "icons": {
-    //     "start": "vm",
-    //     "end": "pass-filled"
-    //   }
-    // }
   ]
 }
