@@ -210,6 +210,20 @@
       }
     },
     {
+      "title": "SLIDE Output highlight",
+      "description": "",
+      "steps": [
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net cli/output_highlight.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "OPEN - consumption.cs",
       "description": "",
       "steps": [

@@ -11,4 +11,4 @@ transition: fadeIn
 - **However** - Generated code is editable
 - **Two flavors**:
   - CLI Tool: file-based (CSV/TSV/TXT), local CPU Training
-  - Model Builder (VS): GUI inside VS, more data types (SQL, images, ...), local/GPU/Azure Training
+  - Model Builder (VS): GUI inside VS, more data types (SQL, images, ...), CPU/GPU/Azure Training
