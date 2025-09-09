@@ -5,6 +5,8 @@ image: ".demo/assets/feedback.png"
 transition: fadeIn
 ---
 
-# Thank you!
-- Questions?
-- Please, give feedback 🙏 -->
+# That's a wrap 🌯
+One scan gets you:
+- A place to roast or praise me (feedback)
+  - Then get your goodies (resources & slides)
+- Ask me anything (Q&A)

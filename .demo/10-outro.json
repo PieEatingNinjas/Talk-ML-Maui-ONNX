@@ -3,24 +3,24 @@
   "title": "Outro",
   "description": "",
   "demos": [
-    {
-      "title": "Resources",
-      "description": "",
-      "steps": [
-        {
-          "action": "snippet",
-          "contentPath": ".dtsnippets/prepvscode.json"
-        },
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/outro/resources.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
+    // {
+    //   "title": "Resources",
+    //   "description": "",
+    //   "steps": [
+    //     {
+    //       "action": "snippet",
+    //       "contentPath": ".dtsnippets/prepvscode.json"
+    //     },
+    //     {
+    //       "action": "openSlide",
+    //       "path": "/.demo/slides/outro/resources.md"
+    //     }
+    //   ],
+    //   "icons": {
+    //     "start": "vm",
+    //     "end": "pass-filled"
+    //   }
+    // },
     {
       "title": "Thank you",
       "description": "",
