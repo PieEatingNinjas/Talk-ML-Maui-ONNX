@@ -1,9 +1,6 @@
 ---
-theme: quantum
-layout: intro
+customTheme: .demo/intro/theme.css
+layout: image
+image: ".demo/slides/intro/image.png"
 transition: fadeIn
 ---
-
-# Building Intelligent .NET MAUI Apps with ML.NET
-
-Pieter Nijs

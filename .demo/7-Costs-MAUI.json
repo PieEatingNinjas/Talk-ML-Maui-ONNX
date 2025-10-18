@@ -427,6 +427,24 @@
         "start": "vm",
         "end": "pass-filled"
       }
+    },
+    {
+      "title": "Summary",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/ml.net code/summary.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
     }
   ]
 }

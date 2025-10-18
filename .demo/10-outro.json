@@ -22,6 +22,24 @@
     //   }
     // },
     {
+      "title": "Recap",
+      "description": "",
+      "steps": [
+        {
+          "action": "snippet",
+          "contentPath": ".dtsnippets/prepvscode.json"
+        },
+        {
+          "action": "openSlide",
+          "path": "/.demo/slides/outro/recap.md"
+        }
+      ],
+      "icons": {
+        "start": "vm",
+        "end": "pass-filled"
+      }
+    },
+    {
       "title": "Thank you",
       "description": "",
       "steps": [
