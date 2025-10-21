@@ -4,9 +4,7 @@ layout: default
 transition: fadeIn
 ---
 
-# ML.NET with ONNX - Summary
-- Generated model externally
-    - Exported as ONNX model
-- Copied ONNX model to .NET MAUI
-- Written code (pipeline) to use model
-    - Important to know models input and output!
+# ONNX — When training happens elsewhere
+- Use existing state-of-the-art models without retraining
+- Perfect for mixing non-.NET training with .NET inference
+- Beware: feature shape & contract must match exactly

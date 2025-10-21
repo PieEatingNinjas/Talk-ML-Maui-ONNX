@@ -5,7 +5,7 @@ transition: fadeIn
 ---
 
 # About AutoML (in ML.NET)
-- **What it does** - Tries many models/settings to find a good fit
+- **What it does** - Tries many algorithms and hyperparameters to find a good fit
 - **Great for** - Quick starts and prototyping 
 - **But** - Doesn’t capture all domain nuances
 - **However** - Generated code is editable

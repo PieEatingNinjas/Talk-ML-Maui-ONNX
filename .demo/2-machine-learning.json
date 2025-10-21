@@ -21,20 +21,20 @@
         "end": "pass-filled"
       }
     },
-    {
-      "title": "What is Machine Learning?",
-      "description": "",
-      "steps": [
-        {
-          "action": "openSlide",
-          "path": "/.demo/slides/machinelearning/what-is-ml.md"
-        }
-      ],
-      "icons": {
-        "start": "vm",
-        "end": "pass-filled"
-      }
-    },
+    // {
+    //   "title": "What is Machine Learning?",
+    //   "description": "",
+    //   "steps": [
+    //     {
+    //       "action": "openSlide",
+    //       "path": "/.demo/slides/machinelearning/what-is-ml.md"
+    //     }
+    //   ],
+    //   "icons": {
+    //     "start": "vm",
+    //     "end": "pass-filled"
+    //   }
+    // },
     {
       "title": "Diagram Coding",
       "description": "",

@@ -4,10 +4,7 @@ layout: default
 transition: fadeIn
 ---
 
-# ML.NET with code - Summary
-- Generated model with Code
-    - Custom Pipelines
-    - More 'ML' knowledge needed
-- Copied model to .NET MAUI
-- Written basic code to use model
-- Used model in .NET MAUI
+# Pipelines — When you move beyond AutoML
+- Required when domain knowledge impacts predictions
+- Enables explicit feature engineering & control
+- Harder, but the only way to improve past baseline
